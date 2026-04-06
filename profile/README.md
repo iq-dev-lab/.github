@@ -6,6 +6,10 @@
 
 <br/>
 
+[![IQ Lab](https://img.shields.io/badge/IQ_Lab-iq--dev--lab.github.io-ff4d4d?style=for-the-badge&logo=gitbook&logoColor=white)](https://iq-dev-lab.github.io)
+
+<br/>
+
 > *"Explore → Analyze → Practice → Document → Repeat"*
 
 공식 문서와 표준 레퍼런스를 AI와 함께 **깊이 있게 분석**하고,  
@@ -48,12 +52,12 @@
 
 ```mermaid
 graph LR
-    A[🔍 Explore] --> B[🤖 AI Analysis]
-    B --> C[💭 Deep Dive]
-    C --> D[💻 Practice]
-    D --> E[📝 Document]
-    E --> A
-    
+    A{{🔍 Explore}} -->|레퍼런스 탐구| B{{🤖 Analyze}}
+    B -->|본질 분석| C{{💭 Deep Dive}}
+    C -->|왜? 집요하게| D{{💻 Practice}}
+    D -->|코드 검증| E{{📝 Document}}
+    E -.->|반복| A
+
     style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style B fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
     style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
