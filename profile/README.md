@@ -21,6 +21,9 @@
 
 ## 📚 Projects & Studies
 
+<details>
+<summary><h3>☕ Java Core &nbsp;<sub>7 repos</sub></h3></summary>
+
 | 📌 Title | 📝 Key Topics | 🔗 Link |
 |:---------|:----------|:---------|
 | **Java API Reference** | **자바 표준 라이브러리 원리**, 실무 패턴, 성능 최적화, 실행 가능한 예제 | [📂 Repository](https://github.com/iq-dev-lab/java-api-reference) |
@@ -30,6 +33,16 @@
 | **Java Design Patterns** | **47가지 디자인 패턴**, GoF/아키텍처/동시성 패턴, 실전 Before/After 비교 | [📂 Repository](https://github.com/iq-dev-lab/java-design-patterns) |
 | **Java Concurrency Deep Dive** | **JVM 락 메커니즘 완전 분해**, Mark Word·Biased/Thin/Fat Lock 확장, volatile·happens-before, CAS·AQS 내부 구조, 가상 스레드 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/java-concurrency-deep-dive) |
 | **Unit Testing** | **단위 테스트 설계 원칙**, Mocking 전략(Stub/Spy/Fake), 안티패턴 분석, 실전 Before/After | [📂 Repository](https://github.com/iq-dev-lab/unit-testing) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🍃 Spring Ecosystem &nbsp;<sub>8 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
 | **Spring Core Deep Dive** | **IoC 컨테이너 완전 해부**, DI 내부 동작, Bean 생명주기, AOP/Proxy 구현 원리, SpEL, 이벤트 시스템 (51개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-core-deep-dive) |
 | **Spring Data & Transaction** | **Spring Data JPA 내부 구조**, 트랜잭션 관리, Hibernate 통합, 쿼리 성능 튜닝, Connection Pool (45개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-data-transaction) |
 | **Spring Boot Internals** | **Auto-configuration 내부 동작**, 스타트업 프로세스, Property 관리, Actuator, 내장 서버 구성 (45개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-boot-internals) |
@@ -37,18 +50,79 @@
 | **Spring Security Deep Dive** | **FilterChainProxy 완전 분해**, AuthenticationManager → ProviderManager → UserDetailsService 체인, JWT/SecurityContext, OAuth2 Authorization Code Flow (45개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-security-deep-dive) |
 | **Spring Batch Deep Dive** | **ChunkOrientedTasklet 완전 분해**, ItemReader/Processor/Writer 체인, Job 재시작·재시도 메커니즘, Partitioning 병렬 분산 처리 (35개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-batch-deep-dive) |
 | **Spring Cloud Deep Dive** | **분산 시스템 내부 완전 해부**, Config Server/@RefreshScope, Eureka Heartbeat, Gateway 필터 체인, Circuit Breaker 상태 전이, 분산 추적 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-cloud-deep-dive) |
+| **Spring WebFlux Deep Dive** | **Reactive Streams 스펙 완전 분해**, Project Reactor Lazy Evaluation, Netty 아키텍처·epoll, R2DBC·Redis Reactive 통합 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/spring-webflux-deep-dive) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🗄️ Database &nbsp;<sub>5 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
 | **Database Internals Deep Dive** | **InnoDB Buffer Pool/B-Tree 내부 구조**, MVCC·Undo Log, Gap Lock·Phantom Read, 격리 수준 완전 분해 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/database-internals) |
-| **Network Deep Dive** | **TCP 3-Way Handshake·TIME_WAIT**, TLS 1.3 핸드쉐이크, HTTP/2 멀티플렉싱·HOL Blocking, 패킷 레벨 분석 (37개 문서) | [📂 Repository](https://github.com/iq-dev-lab/network-deep-dive) |
 | **MySQL Deep Dive** | **실행계획 분석·튜닝**, 서브쿼리→세미조인 변환, 파티션 프루닝, Binary Log 포맷, Replication Lag 원인 분석 (38개 문서) | [📂 Repository](https://github.com/iq-dev-lab/mysql-deep-dive) |
+| **PostgreSQL Deep Dive** | **MVCC·Dead Tuple·VACUUM 완전 분해**, Serializable Snapshot Isolation, B-Tree Index-Only Scan·실행 계획 분석, TOAST 내부 구조 (41개 문서) | [📂 Repository](https://github.com/iq-dev-lab/postgresql-deep-dive) |
 | **Redis Deep Dive** | **Redis 내부 자료구조 완전 분해**, 지속성(RDB/AOF), 클러스터·센티넬, Pub/Sub vs Stream, 성능 튜닝 (37개 문서) | [📂 Repository](https://github.com/iq-dev-lab/redis-deep-dive) |
-| **Kafka Deep Dive** | **파티션·ISR·리밸런싱 완전 분해**, acks/min.insync.replicas 트레이드오프, Exactly-Once 구현 원리, Consumer Lag 진단 (37개 문서) | [📂 Repository](https://github.com/iq-dev-lab/kafka-deep-dive) |
 | **Elasticsearch Deep Dive** | **Lucene 역색인 완전 분해**, BM25 점수 계산, Shard·Replica 분산 구조, Aggregation 내부 동작, 실전 성능 튜닝 (38개 문서) | [📂 Repository](https://github.com/iq-dev-lab/elasticsearch-deep-dive) |
-| **Observability Deep Dive** | **Java Agent 바이트코드 조작 원리**, Prometheus 수집 메커니즘, OpenTelemetry 분산 추적, Grafana 대시보드 설계, 실전 장애 진단 (35개 문서) | [📂 Repository](https://github.com/iq-dev-lab/observability-deep-dive) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>📨 Messaging & Streaming &nbsp;<sub>2 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
+| **Kafka Deep Dive** | **파티션·ISR·리밸런싱 완전 분해**, acks/min.insync.replicas 트레이드오프, Exactly-Once 구현 원리, Consumer Lag 진단 (37개 문서) | [📂 Repository](https://github.com/iq-dev-lab/kafka-deep-dive) |
+| **RabbitMQ Deep Dive** | **Exchange 라우팅 완전 분해**, Quorum Queue 클러스터링, Outbox + Publisher Confirm 완전 보장 패턴, Choreography Saga 보상 트랜잭션 (38개 문서) | [📂 Repository](https://github.com/iq-dev-lab/rabbitmq-deep-dive) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🏛️ Architecture & Design &nbsp;<sub>5 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
+| **DDD Deep Dive** | **Bounded Context 전략 설계**, Aggregate·Value Object·Domain Event 완전 분해, Repository 패턴, Saga 보상 트랜잭션, 도메인 테스트 전략 (43개 문서) | [📂 Repository](https://github.com/iq-dev-lab/ddd-deep-dive) |
+| **CQRS + Event Sourcing Deep Dive** | **CQS 원칙·비동기 Command 완전 분해**, Event Store·Projection 원리, 이벤트 소싱 통합 흐름, 마이크로서비스 통합 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/cqrs-event-sourcing-deep-dive) |
+| **Architecture Patterns Deep Dive** | **Layered → Hexagonal → Clean Architecture 완전 분해**, DIP 기반 개선, Uncle Bob 4원칙, DDD 통합·MSA 연계 (39개 문서) | [📂 Repository](https://github.com/iq-dev-lab/architecture-patterns-deep-dive) |
+| **MSA Deep Dive** | **모놀리스→MSA 전환 원칙**, Saga 분산 트랜잭션·보상 패턴, 서비스 경계 설계, Circuit Breaker 상태 전이, 분산 추적 (41개 문서) | [📂 Repository](https://github.com/iq-dev-lab/msa-deep-dive) |
+| **System Design Deep Dive** | **대규모 시스템 설계 원칙**, URL 단축기·YouTube·검색 자동완성·라이브 스트리밍 케이스 스터디, DNS·스토리지 계층 (42개 문서) | [📂 Repository](https://github.com/iq-dev-lab/system-design-deep-dive) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🖥️ Infrastructure & DevOps &nbsp;<sub>4 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
 | **Docker Deep Dive** | **Namespaces/Cgroups/UnionFS**, 이미지 최적화, 네트워킹/보안 원리, 실전 트러블슈팅 | [📂 Repository](https://github.com/iq-dev-lab/docker-deep-dive) |
 | **Kubernetes Deep Dive** | **Control Plane 완전 분해**, etcd·API Server·Scheduler·kubelet 내부 동작, Pod 스케줄링·HPA·네트워킹 원리, 선언적 상태 수렴 메커니즘 (40개 문서) | [📂 Repository](https://github.com/iq-dev-lab/kubernetes-deep-dive) |
 | **Linux for Backend Deep Dive** | **커널 I/O·메모리 관리 완전 분해**, 프로세스·스레드·스케줄러, 시스템콜·epoll·시그널, 파일시스템·네트워크 스택 (38개 문서) | [📂 Repository](https://github.com/iq-dev-lab/linux-for-backend-deep-dive) |
+| **Observability Deep Dive** | **Java Agent 바이트코드 조작 원리**, Prometheus 수집 메커니즘, OpenTelemetry 분산 추적, Grafana 대시보드 설계, 실전 장애 진단 (35개 문서) | [📂 Repository](https://github.com/iq-dev-lab/observability-deep-dive) |
+
+</details>
+
+---
+
+<details>
+<summary><h3>🌐 Network & Systems &nbsp;<sub>2 repos</sub></h3></summary>
+
+| 📌 Title | 📝 Key Topics | 🔗 Link |
+|:---------|:----------|:---------|
+| **Network Deep Dive** | **TCP 3-Way Handshake·TIME_WAIT**, TLS 1.3 핸드쉐이크, HTTP/2 멀티플렉싱·HOL Blocking, 패킷 레벨 분석 (37개 문서) | [📂 Repository](https://github.com/iq-dev-lab/network-deep-dive) |
 | **Git In-Depth** | **Git 내부 구조(Object Model)**, 복잡한 충돌 해결, Rebase 심화, 실전 트러블슈팅 | [📂 Repository](https://github.com/iq-dev-lab/git-in-depth) |
 
+</details>
+
+<br/>
 <sub>💡 지속적으로 새로운 탐구 프로젝트가 추가될 예정입니다.</sub>
 
 <br/>
