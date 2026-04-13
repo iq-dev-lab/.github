@@ -67,7 +67,7 @@
 ---
 
 <details>
-<summary>&nbsp;🗄️ &nbsp;<b>Database</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/5_repos-e8f4f8?style=flat-square&color=336791"/></summary>
+<summary>&nbsp;🗄️ &nbsp;<b>Database</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/6_repos-e8f4f8?style=flat-square&color=336791"/></summary>
 
 <br/>
 
@@ -78,6 +78,7 @@
 | 3 | [**PostgreSQL Deep Dive**](https://github.com/iq-dev-lab/postgresql-deep-dive) | **MVCC·Dead Tuple·VACUUM 완전 분해**, Serializable Snapshot Isolation, B-Tree Index-Only Scan `41docs` |
 | 4 | [**Redis Deep Dive**](https://github.com/iq-dev-lab/redis-deep-dive) | **Redis 내부 자료구조 완전 분해**, 지속성(RDB/AOF), 클러스터·센티넬, Pub/Sub vs Stream `37docs` |
 | 5 | [**Elasticsearch Deep Dive**](https://github.com/iq-dev-lab/elasticsearch-deep-dive) | **Lucene 역색인 완전 분해**, BM25 점수 계산, Shard·Replica 분산 구조, Aggregation 내부 동작 `38docs` |
+| 6 | [**DB Migration Deep Dive**](https://github.com/iq-dev-lab/db-migration-deep-dive) | **Flyway 체크섬 감지·적용 원리**, InnoDB Online DDL Lock 조건, Expand-Contract 무중단 컬럼 변경, Forward-Only 전략 `38docs` |
 
 <br/>
 
@@ -121,7 +122,52 @@
 ---
 
 <details>
-<summary>&nbsp;🖥️ &nbsp;<b>Infrastructure & DevOps</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/6_repos-e8f4f8?style=flat-square&color=2496ed"/></summary>
+<summary>&nbsp;🔌 &nbsp;<b>API & Communication</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/1_repo-e8f4f8?style=flat-square&color=244c5a"/></summary>
+
+<br/>
+
+| &nbsp; | 📌 Title | 📝 Key Topics |
+|:--:|:---------|:----------|
+| 1 | [**gRPC + Protocol Buffers Deep Dive**](https://github.com/iq-dev-lab/grpc-deep-dive) | **Protobuf TLV 인코딩·필드 번호 계약 완전 분해**, HTTP/2 스트림 멀티플렉싱, Interceptor 체인, Deadline 전파, Buf Breaking Change 감지 `38docs` |
+
+<br/>
+
+</details>
+
+---
+
+<details>
+<summary>&nbsp;🔐 &nbsp;<b>Security Engineering</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/1_repo-e8f4f8?style=flat-square&color=c0392b"/></summary>
+
+<br/>
+
+| &nbsp; | 📌 Title | 📝 Key Topics |
+|:--:|:---------|:----------|
+| 1 | [**Security Engineering Deep Dive**](https://github.com/iq-dev-lab/security-engineering-deep-dive) | **공격자 관점 STRIDE 위협 모델링**, SQL Injection·XSS·CSRF 근본 원인 분해, JWT alg:none·알고리즘 혼동 공격, SSRF → AWS 자격증명 탈취 시나리오, OWASP Top 10 방어 설계 `41docs` |
+
+<br/>
+
+</details>
+
+---
+
+<details>
+<summary>&nbsp;⚡ &nbsp;<b>Performance & Quality</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/1_repo-e8f4f8?style=flat-square&color=e67e22"/></summary>
+
+<br/>
+
+| &nbsp; | 📌 Title | 📝 Key Topics |
+|:--:|:---------|:----------|
+| 1 | [**Performance Testing Deep Dive**](https://github.com/iq-dev-lab/performance-testing-deep-dive) | **k6 부하 테스트·p95/p99 정량 측정**, USE 방법론 병목 특정, async-profiler Flame Graph 코드 레벨 분석, Connection Pool 공식, GC Stop-The-World 측정 `39docs` |
+
+<br/>
+
+</details>
+
+---
+
+<details>
+<summary>&nbsp;🖥️ &nbsp;<b>Infrastructure & DevOps</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/7_repos-e8f4f8?style=flat-square&color=2496ed"/></summary>
 
 <br/>
 
@@ -133,6 +179,7 @@
 | 4 | [**Docker Deep Dive**](https://github.com/iq-dev-lab/docker-deep-dive) | **Namespaces/Cgroups/UnionFS**, 이미지 최적화, 네트워킹/보안 원리, 실전 트러블슈팅 |
 | 5 | [**Kubernetes Deep Dive**](https://github.com/iq-dev-lab/kubernetes-deep-dive) | **Control Plane 완전 분해**, etcd·API Server·Scheduler·kubelet 내부 동작, Pod 스케줄링·HPA `40docs` |
 | 6 | [**Observability Deep Dive**](https://github.com/iq-dev-lab/observability-deep-dive) | **Java Agent 바이트코드 조작 원리**, Prometheus 수집 메커니즘, OpenTelemetry 분산 추적 `35docs` |
+| 7 | [**CI/CD Pipeline Deep Dive**](https://github.com/iq-dev-lab/cicd-deep-dive) | **GitHub Actions Runner 격리·Job 스케줄링 완전 분해**, Docker 레이어 캐시 원리, ArgoCD Reconciliation Loop, 카나리 배포·Argo Rollouts AnalysisTemplate `40docs` |
 
 <br/>
 
