@@ -9,34 +9,52 @@
 
 <br/>
 
-[![IQ Dev Lab](https://img.shields.io/badge/IQ_Dev_Lab-iq--dev--lab.github.io-ff4d4d?style=for-the-badge&logo=gitbook&logoColor=white)](https://iq-dev-lab.github.io)
+[![IQ Dev Lab](https://img.shields.io/badge/IQ_Dev_Lab-iq--dev--lab.github.io-00d9ff?style=for-the-badge&logo=gitbook&logoColor=white)](https://iq-dev-lab.github.io)
 
 <br/>
 
-> *"Beyond the docs — into the essence of software engineering."*
+> *"Beyond the docs."*
 
-공식 문서와 표준 레퍼런스를 **깊이 있게 분석**하고,  
-**왜 이렇게 설계됐는가** 라는 질문으로 기술의 본질을 파헤칩니다.
+**"이 기술은 왜 이렇게 설계됐을까?"**
 
-하드웨어부터 언어·런타임, 백엔드·프론트·모바일, 그리고 이 모두를 가로지르는 설계 원리까지 —  
-**한 가지 일관된 렌즈**(실행·메모리·동시성·렌더링·일관성)로 개발 전반을 관통합니다.
+공식 문서와 소스 코드를 출발점으로 하드웨어·언어·런타임·플랫폼을 분해하고, 실행·메모리·동시성·렌더링·상태 일관성이라는 **하나의 렌즈**로 개발 전반을 관통합니다.
 
-<br/>
-
-[![IQ Lab Blog](https://img.shields.io/badge/📝_Read_on_IQ_Blog-iq--universe.github.io%2Fiq--blog-00d9ff?style=for-the-badge&logo=astro&logoColor=white)](https://iq-universe.github.io/iq-blog/)
+그래서 모든 글은 같은 흐름으로 끝납니다 —
+**원리**(어떻게 동작하나) → **경계**(어떤 조건에서 깨지고 무엇을 맞바꾸나) → **검증**(코드와 측정이 설명을 지지하나).
 
 </div>
 
 ---
 
+## 🏛️ The IQ Knowledge Pentad
+
+IQ의 다섯 연구소는 네 가지 지식 렌즈와 그 앎이 깃드는 마음을 하나의 체계로 연결합니다. 이 연구소는 그중 **Techne(기예지)**의 축을 맡습니다.
+
+<div align="center">
+
+| | 앎의 형태 | 핵심 질문 | 연구소 |
+|:--:|:----------|:----------|:-------|
+| 📐 | **Episteme** — 증명 가능한 이론지 | *왜 참인가?* | [**IQ AI Lab**](https://github.com/iq-ai-lab) · "Prove, don't memorize" |
+| 🔧 | **Techne** — 만들어내는 기예지 | *어떻게 동작하는가?* | **IQ Dev Lab** · "Beyond the docs" |
+| 🧭 | **Phronesis** — 상황 속에서 판단하는 실천지 | *그래서 무엇을 하는가?* | [**IQ Phronesis Lab**](https://github.com/iq-phronesis-lab) · "Distill, don't collect" |
+| 🌌 | **Sophia** — 제1원리에서 실재를 이해하는 이론적 지혜 | *무엇이 근본이며, 왜 이렇게 존재하는가?* | [**IQ Physis Lab**](https://github.com/iq-physis-lab) · "Derive, don't accept" |
+| 🧠 | **Psyche** — 모든 앎이 깃드는 마음 그 자체 *(덕이 아니라, 덕의 자리)* | *아는 자는 무엇이며, 경험은 어떻게 생기는가?* | [**IQ Psyche Lab**](https://github.com/iq-psyche-lab) · "Explain it, don't explain it away" |
+
+</div>
+
+> 다섯 연구소는 같은 깊이의 탐구를 서로 다른 방식으로 검증합니다 — AI는 **증명**, Dev는 **코드와 측정**, Phronesis는 **반례**, Physis는 **실험**, Psyche는 **실험·현상학·계산 모델**을 사용합니다.
+>
+> **Techne의 기준** — 설명이 소스 코드의 실제 실행과 측정 결과를 함께 견디는가.
+
+---
+
 ## 🗺️ Architecture — 4-Layer Stack
 
-이 연구소는 분야를 나열하지 않고 **스택 레이어**로 쌓습니다. 위 레이어는 아래 레이어 위에서 동작하고,  
-같은 본질 질문(동시성·메모리·렌더링·일관성)이 레이어를 가로질러 반복됩니다.
+이 연구소는 분야를 나열하지 않고 **스택 레이어**로 쌓습니다. 위 레이어는 아래 레이어 위에서 동작하고, 같은 본질 질문(동시성·메모리·렌더링·상태 일관성)이 레이어를 가로질러 반복됩니다.
 
 ```mermaid
 graph TD
-    SYN["🧬 <b>Synthesis</b><br/>동시성 · 메모리 · 렌더링 · 상태를 플랫폼 횡단으로 비교"]
+    SYN["🧬 <b>Synthesis</b><br/>동시성 · 메모리 · 렌더링 · 상태 일관성을 플랫폼 횡단으로 비교"]
     PLAT["🔧 Backend &nbsp;|&nbsp; 🌐 Frontend &nbsp;|&nbsp; 📱 Mobile &nbsp;|&nbsp; 🔀 Cross-Platform<br/><i>코드가 어디서 실행되는가</i>"]
     LANG["🧱 <b>Languages &amp; Runtimes</b><br/>Java · Kotlin · Swift · JS/TS · Rust · Go"]
     FND["🪨 <b>Foundations</b><br/>Computer Architecture · Compiler · OS · Network · Crypto · Distributed Theory · GPU"]
@@ -66,6 +84,8 @@ graph TD
 
 <br/>
 
+> 모든 소프트웨어가 끝내 수렴하는 하드웨어·운영체제·컴파일러의 바닥
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Computer Architecture Deep Dive**](https://github.com/iq-dev-lab/computer-architecture-deep-dive) | 🆕 **CPU 파이프라인·캐시 계층·False Sharing**, 분기 예측, 메모리 모델·배리어, SIMD, NUMA — "왜 느린가"의 최종 수렴점 `38docs` |
@@ -87,6 +107,8 @@ graph TD
 
 <br/>
 
+> 문법 너머의 실행 모델 — 메모리·동시성·런타임 설계를 언어 횡단으로 비교
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Rust Deep Dive**](https://github.com/iq-dev-lab/rust-deep-dive) | 🆕 **소유권·빌림 검사기·라이프타임**, `Send`/`Sync`, 런타임 없는 async, zero-cost 추상화, GC 없는 메모리 안전 `42docs` |
@@ -103,21 +125,24 @@ graph TD
 ### 🔧 Backend Engineering &nbsp;<sub>서버 사이드의 본질</sub>
 
 <details>
-<summary>&nbsp;☕ &nbsp;<b>Java Core</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/7_repos-e8f4f8?style=flat-square&color=b8860b"/></summary>
+<summary>&nbsp;☕ &nbsp;<b>Java Core</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/6_repos-e8f4f8?style=flat-square&color=b8860b"/></summary>
 
 <br/>
+
+> 객체 모델에서 JVM 메모리와 동시성까지, Java가 보장하는 계약의 내부
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
-| 1 | [**오브젝트 (Objects)**](https://github.com/iq-dev-lab/object) | 코드로 이해하는 객체지향 설계, 역할/책임/협력 |
-| 2 | [**Modern Java in Action**](https://github.com/iq-dev-lab/modern-java-in-action) | 자바 8+ 함수형 프로그래밍, 스트림 API, 람다 |
-| 3 | [**Java API Reference**](https://github.com/iq-dev-lab/java-api-reference) | **자바 표준 라이브러리 원리**, 실무 패턴, 성능 최적화, 실행 가능한 예제 |
-| 4 | [**Java Design Patterns**](https://github.com/iq-dev-lab/java-design-patterns) | **47가지 디자인 패턴**, GoF/아키텍처/동시성 패턴, 실전 Before/After 비교 |
-| 5 | [**Unit Testing**](https://github.com/iq-dev-lab/unit-testing) | **단위 테스트 설계 원칙**, Mocking 전략(Stub/Spy/Fake), 안티패턴 분석 |
-| 6 | [**Java Concurrency Deep Dive**](https://github.com/iq-dev-lab/java-concurrency-deep-dive) | **JVM 락 메커니즘 완전 분해**, Mark Word·Biased/Thin/Fat Lock, CAS·AQS 내부 구조, 가상 스레드 `40docs` |
-| 7 | [**JVM Deep Dive**](https://github.com/iq-dev-lab/jvm-deep-dive) | **JVM 내부 구조 완전 해부**, 클래스 로딩/GC/JIT/메모리 모델, CPU 레벨 분석, 성능 튜닝 |
+| 1 | [**Modern Java in Action**](https://github.com/iq-dev-lab/modern-java-in-action) | 자바 8+ 함수형 프로그래밍, 스트림 API, 람다 |
+| 2 | [**Java API Reference**](https://github.com/iq-dev-lab/java-api-reference) | **자바 표준 라이브러리 원리**, 실무 패턴, 성능 최적화, 실행 가능한 예제 |
+| 3 | [**Java Design Patterns**](https://github.com/iq-dev-lab/java-design-patterns) | **47가지 디자인 패턴**, GoF/아키텍처/동시성 패턴, 실전 Before/After 비교 |
+| 4 | [**Unit Testing**](https://github.com/iq-dev-lab/unit-testing) | **단위 테스트 설계 원칙**, Mocking 전략(Stub/Spy/Fake), 안티패턴 분석 |
+| 5 | [**Java Concurrency Deep Dive**](https://github.com/iq-dev-lab/java-concurrency-deep-dive) | **JVM 락 메커니즘 완전 분해**, Mark Word·Biased/Thin/Fat Lock, CAS·AQS 내부 구조, 가상 스레드 `40docs` |
+| 6 | [**JVM Deep Dive**](https://github.com/iq-dev-lab/jvm-deep-dive) | **JVM 내부 구조 완전 해부**, 클래스 로딩/GC/JIT/메모리 모델, CPU 레벨 분석, 성능 튜닝 |
 
 <br/>
+
+<sub>Legacy / fork study — [**오브젝트 (Objects)**](https://github.com/iq-dev-lab/object): 코드로 이해하는 객체지향 설계, 역할·책임·협력 *(Blue curated 집계 제외)*</sub>
 
 </details>
 
@@ -125,6 +150,8 @@ graph TD
 <summary>&nbsp;🍃 &nbsp;<b>Spring Ecosystem</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/8_repos-e8f4f8?style=flat-square&color=6db33f"/></summary>
 
 <br/>
+
+> 편리한 추상화 아래에서 컨테이너·프록시·트랜잭션·리액티브 런타임이 움직이는 방식
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -146,6 +173,8 @@ graph TD
 
 <br/>
 
+> 경계·의존성·일관성을 다루는 설계 원리와 그 트레이드오프
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Architecture Patterns Deep Dive**](https://github.com/iq-dev-lab/architecture-patterns-deep-dive) | **Layered → Hexagonal → Clean Architecture 완전 분해**, DIP 기반 개선, Uncle Bob 4원칙 `39docs` |
@@ -162,6 +191,8 @@ graph TD
 <summary>&nbsp;🖥️ &nbsp;<b>Infrastructure & DevOps</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/9_repos-e8f4f8?style=flat-square&color=2496ed"/></summary>
 
 <br/>
+
+> 프로세스와 네트워크에서 컨테이너·오케스트레이션·배포까지, 운영 환경의 실제 동작
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -184,6 +215,8 @@ graph TD
 
 <br/>
 
+> 저장 구조·쿼리 계획·동시성 제어가 데이터의 성능과 일관성을 만드는 방식
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Database Internals Deep Dive**](https://github.com/iq-dev-lab/database-internals) | **InnoDB Buffer Pool/B-Tree 내부 구조**, MVCC·Undo Log, Gap Lock·Phantom Read, 격리 수준 완전 분해 `40docs` |
@@ -202,6 +235,8 @@ graph TD
 
 <br/>
 
+> 비동기 경계에서 순서·중복·전달 보장을 설계하는 원리
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Kafka Deep Dive**](https://github.com/iq-dev-lab/kafka-deep-dive) | **파티션·ISR·리밸런싱 완전 분해**, acks/min.insync.replicas 트레이드오프, Exactly-Once 구현 원리 `37docs` |
@@ -216,6 +251,8 @@ graph TD
 
 <br/>
 
+> 프로세스 사이의 계약이 직렬화·전송·기한을 거쳐 유지되는 방식
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**gRPC + Protocol Buffers Deep Dive**](https://github.com/iq-dev-lab/grpc-deep-dive) | **Protobuf TLV 인코딩·필드 번호 계약 완전 분해**, HTTP/2 스트림 멀티플렉싱, Interceptor 체인, Deadline 전파, Buf Breaking Change 감지 `38docs` |
@@ -228,6 +265,8 @@ graph TD
 <summary>&nbsp;🔐 &nbsp;<b>Security Engineering</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/1_repo-e8f4f8?style=flat-square&color=c0392b"/></summary>
 
 <br/>
+
+> 공격자 관점에서 신뢰 경계를 분해하고 방어 설계를 검증
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -242,6 +281,8 @@ graph TD
 
 <br/>
 
+> 추측 대신 부하·프로파일·지표로 병목을 특정하고 개선을 증명
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Performance Testing Deep Dive**](https://github.com/iq-dev-lab/performance-testing-deep-dive) | **k6 부하 테스트·p95/p99 정량 측정**, USE 방법론 병목 특정, async-profiler Flame Graph 코드 레벨 분석, Connection Pool 공식, GC Stop-The-World 측정 `39docs` |
@@ -254,6 +295,8 @@ graph TD
 <summary>&nbsp;📊 &nbsp;<b>Data Engineering</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/3_repos-e8f4f8?style=flat-square&color=e25a1c"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> 대규모 데이터의 계산·이동·저장 형식을 실행 엔진의 관점에서 해부
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -274,6 +317,8 @@ graph TD
 
 <br/>
 
+> 브라우저가 코드·문서·스타일을 실행하고 픽셀로 바꾸는 전체 파이프라인
+
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Browser Rendering Deep Dive**](https://github.com/iq-dev-lab/browser-rendering-deep-dive) | 🆕 **Critical Rendering Path**, DOM/CSSOM→Render Tree, Layout·Paint·Composite 분리, Layer 승격, Blink 아키텍처 `38docs` |
@@ -289,6 +334,8 @@ graph TD
 <summary>&nbsp;⚛️ &nbsp;<b>Web Language & Framework</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/9_repos-e8f4f8?style=flat-square&color=61dafb"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> 언어·타입·반응성·렌더링 추상화가 프론트엔드 상태를 일관되게 유지하는 방식
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -311,28 +358,33 @@ graph TD
 ### 📱 Mobile &nbsp;<sub>온디바이스의 본질</sub>
 
 <details>
-<summary>&nbsp;🤖 &nbsp;<b>Android</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/7_repos-e8f4f8?style=flat-square&color=3ddc84"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
+<summary>&nbsp;🤖 &nbsp;<b>Android</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/8_repos-e8f4f8?style=flat-square&color=3ddc84"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> ART·Binder·코루틴·Compose를 관통하는 Android 실행 모델
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
 | 1 | [**Android Runtime (ART)**](https://github.com/iq-dev-lab/android-runtime-deep-dive) | 🆕 **Dalvik→ART**, AOT/JIT 하이브리드, Baseline Profile, DEX·OAT, Concurrent Copying GC `38docs` |
-| 2 | [**Framework Internals**](https://github.com/iq-dev-lab/android-framework-internals-deep-dive) | 🆕 **Binder IPC 완전 분해**, Looper/Handler/MessageQueue, 생명주기 실제 흐름, Zygote `40docs` |
-| 3 | [**Kotlin Deep Dive**](https://github.com/iq-dev-lab/kotlin-deep-dive) | 🆕 **코루틴 내부(CPS·상태머신)**, 구조적 동시성, Flow·백프레셔, inline 바이트코드 `42docs` |
-| 4 | [**Jetpack Compose Internals**](https://github.com/iq-dev-lab/jetpack-compose-internals-deep-dive) | 🆕 **Recomposition·Slot Table(Gap Buffer)**, Positional Memoization, Snapshot State(MVCC 유사) `42docs` |
-| 5 | [**Android Architecture**](https://github.com/iq-dev-lab/android-architecture-deep-dive) | 🆕 **MVVM·MVI 단방향 흐름**, Clean Architecture, 멀티 모듈화, Hilt 컴파일타임 그래프 `39docs` |
-| 6 | [**Android Performance**](https://github.com/iq-dev-lab/android-performance-deep-dive) | 🆕 **Choreographer·Jank 측정**, ANR 근본원인, Baseline Profile, Macrobenchmark `36docs` |
-| 7 | [**Local-first & Sync (CRDT)**](https://github.com/iq-dev-lab/local-first-sync-deep-dive) | 🆕 **SQLite/Room 내부**, 오프라인 동기화, 충돌 해결, CRDT — Distributed Theory와 연결 `35docs` |
+| 2 | [**Android Build System Deep Dive**](https://github.com/iq-dev-lab/android-build-system-deep-dive) | 🆕 **Gradle 3단계·태스크 그래프**, AGP Variant, Configuration Cache, D8/R8·AAB, KSP와 kapt의 빌드 비용 `35docs` |
+| 3 | [**Framework Internals**](https://github.com/iq-dev-lab/android-framework-internals-deep-dive) | 🆕 **Binder IPC 완전 분해**, Looper/Handler/MessageQueue, 생명주기 실제 흐름, Zygote `40docs` |
+| 4 | [**Kotlin Deep Dive**](https://github.com/iq-dev-lab/kotlin-deep-dive) | 🆕 **코루틴 내부(CPS·상태머신)**, 구조적 동시성, Flow·백프레셔, inline 바이트코드 `42docs` |
+| 5 | [**Jetpack Compose Internals**](https://github.com/iq-dev-lab/jetpack-compose-internals-deep-dive) | 🆕 **Recomposition·Slot Table(Gap Buffer)**, Positional Memoization, Snapshot State(MVCC 유사) `42docs` |
+| 6 | [**Android Architecture**](https://github.com/iq-dev-lab/android-architecture-deep-dive) | 🆕 **MVVM·MVI 단방향 흐름**, Clean Architecture, 멀티 모듈화, Hilt 컴파일타임 그래프 `39docs` |
+| 7 | [**Android Performance**](https://github.com/iq-dev-lab/android-performance-deep-dive) | 🆕 **Choreographer·Jank 측정**, ANR 근본원인, Baseline Profile, Macrobenchmark `36docs` |
+| 8 | [**Local-first & Sync (CRDT)**](https://github.com/iq-dev-lab/local-first-sync-deep-dive) | 🆕 **SQLite/Room 내부**, 오프라인 동기화, 충돌 해결, CRDT — Distributed Theory와 연결 `35docs` |
 
 <br/>
 
 </details>
 
 <details>
-<summary>&nbsp;🍎 &nbsp;<b>iOS</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/6_repos-e8f4f8?style=flat-square&color=000000"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
+<summary>&nbsp;🍎 &nbsp;<b>iOS</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/7_repos-e8f4f8?style=flat-square&color=000000"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> Swift 런타임에서 RunLoop·SwiftUI·Core Animation까지 이어지는 iOS 실행 모델
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -342,6 +394,7 @@ graph TD
 | 4 | [**SwiftUI Internals**](https://github.com/iq-dev-lab/swiftui-internals-deep-dive) | 🆕 **선언적 렌더링·View Identity**, `@State`/`@Binding`, AttributeGraph 의존성 엔진, Diffing `40docs` |
 | 5 | [**UIKit & Core Animation**](https://github.com/iq-dev-lab/uikit-core-animation-deep-dive) | 🆕 **렌더 파이프라인·Layer Tree**, Render Server(별도 프로세스), Offscreen Rendering `38docs` |
 | 6 | [**Swift Concurrency**](https://github.com/iq-dev-lab/swift-concurrency-deep-dive) | 🆕 **GCD 내부**, async/await 상태머신, Actor·Sendable 격리, 구조적 동시성 `40docs` |
+| 7 | [**iOS Performance Deep Dive**](https://github.com/iq-dev-lab/ios-performance-deep-dive) | 🆕 **Instruments·MetricKit 측정**, hitch·hang, 런치 5단계, 메모리 비용, 24–120Hz 가변 프레임 예산 `37docs` |
 
 <br/>
 
@@ -355,6 +408,8 @@ graph TD
 <summary>&nbsp;🔀 &nbsp;<b>Cross-Platform</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/3_repos-e8f4f8?style=flat-square&color=02569b"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> 하나의 코드가 여러 플랫폼의 런타임·렌더러·네이티브 경계를 건너는 방식
 
 | &nbsp; | 📌 Title | 📝 Key Topics |
 |:--:|:---------|:----------|
@@ -371,23 +426,27 @@ graph TD
 ### 🧬 Synthesis &nbsp;<sub>플랫폼을 가로지르는 본질 — 이 연구소의 무기</sub>
 
 <details>
-<summary>&nbsp;🧬 &nbsp;<b>Synthesis</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/4_repos-e8f4f8?style=flat-square&color=7b1fa2"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
+<summary>&nbsp;🧬 &nbsp;<b>Synthesis</b> &nbsp;&nbsp;<img src="https://img.shields.io/badge/6_repos-e8f4f8?style=flat-square&color=7b1fa2"/>&nbsp;<img src="https://img.shields.io/badge/🆕_확장-fff?style=flat-square&color=ff4d4d"/></summary>
 
 <br/>
+
+> 동시성·메모리·렌더링·상태 일관성에 대한 서로 다른 플랫폼의 답을 같은 질문 위에서 비교
 
 | &nbsp; | 📌 Title | 📝 묶는 대상 |
 |:--:|:---------|:----------|
 | 1 | [**Concurrency Models Compared**](https://github.com/iq-dev-lab/concurrency-models-compared) | 🆕 Virtual Thread ↔ Event Loop ↔ Coroutine ↔ async/Actor ↔ **고루틴** — 다섯 가지 답 |
 | 2 | [**Memory Management Compared**](https://github.com/iq-dev-lab/memory-management-compared) | 🆕 JVM GC ↔ V8 Orinoco ↔ Go GC ↔ ART ↔ **Swift ARC** ↔ **Rust 소유권**(GC 없음) — 여섯 가지 답 |
-| 3 | [**Rendering Pipelines Compared**](https://github.com/iq-dev-lab/rendering-pipelines-compared) | 🆕 Browser Composite ↔ Compose ↔ SwiftUI ↔ Flutter ↔ GPU 바닥 |
-| 4 | [**Reactivity & State Compared**](https://github.com/iq-dev-lab/reactivity-state-compared) | 🆕 Signal ↔ Snapshot State ↔ AttributeGraph ↔ MVCC — 일관성의 동형성 |
+| 3 | [**Compilation Strategies Compared**](https://github.com/iq-dev-lab/compilation-strategies-compared) | 🆕 V8 4티어 ↔ JVM C1/C2 ↔ ART JIT/AOT ↔ Rust 단형화 — 콜드 스타트·처리량·메모리·이식성의 선택 `38docs` |
+| 4 | [**Rendering Pipelines Compared**](https://github.com/iq-dev-lab/rendering-pipelines-compared) | 🆕 Browser Composite ↔ Compose ↔ SwiftUI ↔ Flutter ↔ GPU 바닥 |
+| 5 | [**Reactivity & State Compared**](https://github.com/iq-dev-lab/reactivity-state-compared) | 🆕 Signal ↔ Snapshot State ↔ AttributeGraph ↔ MVCC — 일관성의 동형성 |
+| 6 | [**Caching & Memory Hierarchy Compared**](https://github.com/iq-dev-lab/caching-memory-hierarchy-compared) | 🆕 CPU 캐시 ↔ Page Cache ↔ InnoDB ↔ Redis ↔ CDN ↔ UI 메모이제이션 — 지역성·축출·쓰기·무효화의 네 문제 `37docs` |
 
 <br/>
 
 </details>
 
 <br/>
-<sub>💡 지속적으로 새로운 탐구 프로젝트가 추가될 예정입니다. (🟢 운영 38 · 🆕 로드맵 45 · 총 83)</sub>
+<sub>💡 Galaxy Blue curated 기준 — 9 domains · 86 repos (🟢 운영 37 · 🆕 확장 49, 공개 비포크 연구 저장소)</sub>
 
 <br/>
 
@@ -418,6 +477,20 @@ graph LR
 
 <br/>
 
+## 📐 Document Format — Principle → Boundary → Verification
+
+이 연구소의 모든 글은 세 단으로 끝납니다.
+
+| 단 | 내용 |
+|:--:|------|
+| 🧩 **Principle** | 내부 원리 — *코드가 실제로 어떻게 실행되고, 왜 이렇게 설계됐나* |
+| ⚖️ **Boundary** | 경계 — *어떤 부하·환경에서 이 설계가 깨지고 무엇을 맞바꾸나* |
+| 📊 **Verification** | 검증 — *소스 코드·실행 예제·프로파일러·벤치마크가 설명을 지지하나* |
+
+<sub>본문 10섹션 템플릿: 🎯 질문 · 🌍 어디서 마주치나 · 📚 공식 계약 · ⚙️ 내부 메커니즘 · 🧠 설계 이유 · ⚖️ 트레이드오프 · 🚧 실패 조건 · 💻 구현 · 📊 측정 · 🤔 다음 질문</sub>
+
+<br/>
+
 ## 💡 Philosophy
 
 <div align="center">
@@ -426,13 +499,14 @@ graph LR
 
 </div>
 
-### Why Deep Dive?
+### Why Techne?
 
 - 🎯 **내부 메커니즘** - 공식 문서가 말해주지 않는 구현 원리까지 추적
 - 🔍 **다각도 분석** - 하나의 개념을 여러 관점에서 해부
 - ❓ **"왜?" 중심** - 단순 사용법이 아닌 설계 의도 탐구
 - 🧬 **횡단 연결** - 한 레이어의 원리를 다른 플랫폼에서 다시 만나며 나선형으로 심화
 - 📊 **원리 → 트레이드오프 → 설계 → 구현 → 검증** - 일관된 탐구 흐름
+- 🚫 **의도적 배제** - 근거 없는 베스트 프랙티스와 사용법 나열은 다루지 않음. 측정 없는 성능 주장과 소스 없는 내부 설명은 소음이다
 
 <br/>
 
@@ -444,8 +518,13 @@ graph LR
 
 <br/>
 
-정제된 결과물은 [**IQ Lab Blog**](https://iq-universe.github.io/iq-blog/)에 발행됩니다.  
-정리(Theorem)와 증명(Proof)으로 구성된 딥다이브 글을 만날 수 있어요.
+**The IQ Knowledge Pentad**
+
+[📐 IQ AI Lab](https://github.com/iq-ai-lab) — *Episteme* &nbsp;·&nbsp; 🔧 **IQ Dev Lab** — *Techne* &nbsp;·&nbsp; [🧭 IQ Phronesis Lab](https://github.com/iq-phronesis-lab) — *Phronesis* &nbsp;·&nbsp; [🌌 IQ Physis Lab](https://github.com/iq-physis-lab) — *Sophia* &nbsp;·&nbsp; [🧠 IQ Psyche Lab](https://github.com/iq-psyche-lab) — *Psyche*
+
+<br/>
+
+[🌀 **IQ Spiral Galaxy**](https://github.com/iq-spiral-galaxy) — [🔴 Red · AI](https://github.com/iq-spiral-galaxy/spiral-buddy-red) &nbsp;·&nbsp; [🟢 Green · Phronesis](https://github.com/iq-spiral-galaxy/spiral-buddy-green) &nbsp;·&nbsp; [🔵 Blue · Dev](https://github.com/iq-spiral-galaxy/spiral-buddy-blue) &nbsp;·&nbsp; [⚫ Black · Physis](https://github.com/iq-spiral-galaxy/spiral-buddy-black) &nbsp;·&nbsp; [⚪ White · Psyche](https://github.com/iq-spiral-galaxy/spiral-buddy-white)
 
 <br/>
 
